@@ -1,0 +1,35 @@
+{% extends 'index.html' %} {% block title %} Boggle {% endblock %} {% block
+content %}
+<div id="game_time"></div>
+<div id="game-board">
+  <table>
+    <tbody>
+      {% for row in session['board'] %}
+      <tr>
+        {% for letter in row %}
+        <td>{{letter}}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<form id="guess_form">
+  <input
+    type="text"
+    placeholder="Enter Word"
+    name="user_guess"
+    id="user_guess"
+  />
+  <button>Submit!</button>
+</form>
+
+<div id="scoreboard-container">
+  <p id="score"></p>
+</div>
+<div id="invalid_message"></div>
+<div>
+  <ol id="user_words"></ol>
+</div>
+
+{% endblock %}

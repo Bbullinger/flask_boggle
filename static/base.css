@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(56, 1, 107);
+}
+h1,h3, form, div {
+    text-align: center;
+    color: rgb(89, 134, 218);
+    align-content: center;
+}
+table {
+    margin:auto;
+}
+td{
+    color:yellow
+}
+#guess-form {
+
+    margin-left:auto;
+}
+div {
+    text-align:center;
+}

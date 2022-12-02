@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/static/base.css" rel="stylesheet" />
+    <title>{% block title %} Boggle {% endblock %}</title>
+  </head>
+  <body>
+    <h1>Boggle</h1>
+    <h3>Find as many words as you can</h3>
+    {% block content %}
+    <form action="/game">
+      <button>Start Game</button>
+    </form>
+    {% endblock %}
+
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="http://unpkg.com/axios/dist/axios.js"></script>
+    <script src="/static/boggle.js"></script>
+    <script>
+      const game = new Board("#game-board");
+    </script>
+  </body>
+</html>

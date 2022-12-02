@@ -4,8 +4,7 @@ from random import choice
 import string
 
 
-class Boggle():
-
+class Boggle:
     def __init__(self):
 
         self.words = self.read_dict("words.txt")
