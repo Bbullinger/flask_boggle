@@ -6,11 +6,20 @@ h1,h3, form, div {
     color: rgb(89, 134, 218);
     align-content: center;
 }
+#game-board{
+    margin-left:40%;
+    margin-right:40%;
+    display:flex;
+    justify-content:space-between;
+}
 table {
     margin:auto;
+    
 }
 td{
-    color:yellow
+    color:yellow;
+    font-size: 3rem;
+    
 }
 #guess-form {
 

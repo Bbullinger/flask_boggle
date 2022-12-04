@@ -18,7 +18,7 @@ def home_page():
 
 @app.route("/game")
 def game_start():
-    print(session["user_words"])
+
     return render_template("game.html")
 
 
